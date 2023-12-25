@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+<script src="js/scripts.js"></script>
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="js/math/math.js"></script>
+</head>
+  <body>
+	
+	<div id=box>
+	  
+	  <header> <h1>Equation solver</h1></header>
+
+	<p>Click the button to solve the equation.</p>
+
+	<form>
+	  <p>Enter the value for a:<input type='number'  id='a'></p>
+	  <p>Enter the value for b:<input type='number'  id='b'></p>
+	  <p>Enter the value for c:<input type='number'  id='c'></p>
+	</form>
+	  <button onclick="solveEquation()">solve</button>
+	<p id="output"></p>
+	 
+	
+	
+	  <em><b>NOTE</b>:This is for quadratic equations only.</em>
+<div id="hide">
+	  <p id="work"><b></b></p>
+	  <p id="step1"></p>
+	  <p id="step2"></p>
+	  <p id="step3"></p>
+	  <p id="step4"></p>
+	  <p id="step5"></p>
+	  
+	  <p id="ans"></p>
+</div>
+	</div>
+	
+	</body>
+</html>		

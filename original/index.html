@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Zayyad's equation solver</h1>
+<p>Click the button to solve the equation.</p>
+
+<button onclick="solveEquation()">Solve</button>
+
+<p id="quadratic"></p>
+
+<script>
+function solveEquation()
+{
+var equation;
+var equation2;
+var a=prompt("Please enter a",2);
+var b=prompt("Please enter b",6);
+var c=prompt("Please enter c",-80);//default values for a,b,c
+var myArray= [a,b,c];
+
+if (a=myArray[0])/*a is the fist array element so the code will always execute*/
+  {
+  equation= ((-1*b) + Math.sqrt((b*b) - 4*a*c))/ (2*a);//quadratic formula
+ equation2= ((-1*b) -
+Math.sqrt((b*b) - 4*a*c))/
+(2*a);//second answer gotten
+ document.getElementById("quadratic").innerHTML=equation+" or "+equation2 ;
+  }
+}
+</script>
+
+</body>
+</html>
